@@ -14,15 +14,16 @@ Before use, need to download (and install) the dependencies below on your comput
 
 * database: phage protein database, bacterial nucleotide database
 * tools: blast, glimmer
-#### Running steps
-1.	All scripts needed are under the folder:
-new_program_20190515
-2.	Test files are under the folder:
-new_program.testfiles
-3.	In find_prophage.pl, change line 22 to your destination folder:
+#### Running instructions
+1.	All scripts needed are in:
+temperate_phage_detection.zip
+2.	Test files are in:
+temperate_phage_detection.testfiles.zip
+3.	Unzip the above two .zip files to your destionation path.
+4.	In temperate_phage_detection/find_prophage.pl, change line 22 to your destination folder:
 our $program_path = “your destination folder";
-4.	In prophage_grep.pl, change “/data/zhaisx” to your destination folders which include makeblastdb and blastn.
-5.	Usage:
-perl find_prophage.pl ../new_program.testfiles/trimmomatic_1P.fastq  ../new_program.testfiles/trimmomatic_2P.fastq ../new_program.testfiles/test_Assem_Contigs.fa ID species
+5.	In temperate_phage_detection/prophage_grep.pl, change “/data/zhaisx” to your destination folders which include makeblastdb and blastn.
+6.	Under the folder of temperate_phage_detection, running:
+perl find_prophage.pl ../temperate_phage_detection.testfiles/trimmomatic_1P.fastq  ../temperate_phage_detection.testfiles/trimmomatic_2P.fastq ../temperate_phage_detection.testfiles/SRR3313318_scaffolds.fa sample_ID sample_species
 
 
