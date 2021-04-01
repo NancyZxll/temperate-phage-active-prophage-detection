@@ -24,6 +24,6 @@ temperate_phage_detection.testfiles.zip
 our $program_path = “your destination folder";
 5.	In temperate_phage_detection/prophage_grep.pl, change “/data/zhaisx” to your destination folders which include makeblastdb and blastn.
 6.	Under the folder of temperate_phage_detection, running:
-perl find_prophage.pl ../temperate_phage_detection.testfiles/trimmomatic_1P.fastq  ../temperate_phage_detection.testfiles/trimmomatic_2P.fastq ../temperate_phage_detection.testfiles/SRR3313318_scaffolds.fa sample_ID sample_species
+perl find_prophage.pl your_destination_folder/temperate_phage_detection.testfiles/trimmomatic_1P.fastq  your_destination_folder/temperate_phage_detection.testfiles/trimmomatic_2P.fastq your_destination_folder/temperate_phage_detection.testfiles/SRR3313318_scaffolds.fa sample_ID sample_species
 
 
