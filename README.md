@@ -19,7 +19,7 @@ Download scripts and testing files at:
 https://github.com/NancyZxll/temperate-phage-active-prophage-detection/releases/tag/V1.0
 1.	All scripts needed are in:
 temperate_phage_detection.zip
-2.	Test files are in:
+2.	Testing files are in:
 temperate_phage_detection.testfiles.zip
 3.	Unzip the above two .zip files to your destionation path.
 4.	Change the configurations in the main.pl, including input file paths, database paths, and program paths.
