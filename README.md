@@ -13,17 +13,15 @@ Generally, the in silico temperate phage detection method consists of three step
 Before use, need to download (and install) the dependencies below on your computer:
 
 * database: phage protein database, bacterial nucleotide database
-* tools: blast, glimmer
+* tools: blast, glimmer, python2
 #### Running instructions
 1.	All scripts needed are in:
 temperate_phage_detection.zip
 2.	Test files are in:
 temperate_phage_detection.testfiles.zip
 3.	Unzip the above two .zip files to your destionation path.
-4.	In temperate_phage_detection/find_prophage.pl, change line 22 to your destination folder:
-our $program_path = “your destination folder";
-5.	In temperate_phage_detection/prophage_grep.pl, change “/data/zhaisx” to your destination folders which include makeblastdb and blastn.
-6.	Under the folder of temperate_phage_detection, running:
-perl find_prophage.pl your_destination_folder/temperate_phage_detection.testfiles/trimmomatic_1P.fastq  your_destination_folder/temperate_phage_detection.testfiles/trimmomatic_2P.fastq your_destination_folder/temperate_phage_detection.testfiles/SRR3313318_scaffolds.fa sample_ID sample_species
+4.	Change the configurations in the main.pl, including input file paths, database paths, and program paths.
+5.	Run perl main.pl under the folder which all the scripts in (the default folder is temperate_phage_detection).
+
 
 
