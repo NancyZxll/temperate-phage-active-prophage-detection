@@ -15,6 +15,8 @@ Before use, need to download (and install) the dependencies below on your comput
 * database: phage protein database, bacterial nucleotide database
 * tools: blast, glimmer, python2
 #### Running instructions
+Download scripts and test files in:
+https://github.com/NancyZxll/temperate-phage-active-prophage-detection/releases/tag/V1.0
 1.	All scripts needed are in:
 temperate_phage_detection.zip
 2.	Test files are in:
