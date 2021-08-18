@@ -19,7 +19,7 @@ Downloading source codes and testing files at:
 https://github.com/NancyZxll/temperate-phage-active-prophage-detection/releases/tag/V1.0
 
 Specifically, 
-unfolding `Assets` at botoom of the above page, downloading `temperate_phage_detection.zip` for source codes and `temperate_phage_detection_testfiles.zip` for testing files.
+unfolding `Assets` at the bottom of the above page, downloading the `temperate_phage_detection.zip` for the source codes and the `temperate_phage_detection_testfiles.zip` for the testing files.
 
 1.	All scripts needed are in:
 temperate_phage_detection.zip
