@@ -27,10 +27,10 @@ After downloading the two .zip files, please note:
 temperate_phage_detection.zip
 2.	Testing files are in:
 temperate_phage_detection.testfiles.zip
-3.	Unzip the above two .zip files to your destionation path.
+3.	Unzip the above two .zip files to your destination path.
 4.	Change the configurations in the main.pl, including input file paths, database paths, and program paths.
 5.	Run the follwoing command under the folder which all the scripts in (the default folder is temperate_phage_detection):
-     `perl main.pl absolute_path/input.R1.fastq absolute_path/input.R2.fastq absolute_path/input.AssembledSeqs.fasta absolute_path/Sample_ID absolute_path/Sample_species`
+     `perl main.pl absolute_path/Sample.R1.fastq absolute_path/Sample.R2.fastq absolute_path/Sample.AssembledSeqs.fasta Sample_ID Sample_species`
 
 ## License
 Available for academic research and non-commercial use. All rights reserved.
