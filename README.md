@@ -11,8 +11,10 @@ Generally, the in silico temperate phage detection method consists of three step
 #### Dependencies
 Before use, need to download (and install) the dependencies below on your computer:
 
-* database: phage protein database, bacterial nucleotide database
-* tools: blast, glimmer, python
+* Databases: phage protein database, bacterial nucleotide database
+* Tools: blast, glimmer, python
+* We already put the repeatfind program in the source code folder. 
+  Please change the repeatfind path in the main.pl to the folder where you put the repeatfind program.
 #### Running instructions
 Downloading source codes and testing files at:
 
@@ -28,7 +30,7 @@ temperate_phage_detection.zip
 2.	Testing files are in:
 temperate_phage_detection.testfiles.zip
 3.	Unzip the above two .zip files to your destination path.
-4.	Change the configurations in the main.pl, including input file paths, database paths, and program paths.
+4.	Change the configurations in the main.pl, including database paths and program paths.
 5.	Run the follwoing command under the folder which all the scripts in (the default folder is temperate_phage_detection):
      `perl main.pl absolute_path/Sample.R1.fastq absolute_path/Sample.R2.fastq absolute_path/Sample.AssembledSeqs.fasta Sample_ID Sample_species`
 
