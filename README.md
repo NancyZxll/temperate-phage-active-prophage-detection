@@ -11,36 +11,36 @@ Generally, the in silico temperate phage detection method consists of three step
 #### Enviroment Dependencies:
 - python >= 3
 - perl >= 5.32.1
-- blast == 2.9.0
+- blast >= 2.9.0
 - glimmer >= 3.02
-- prokka == 1.13
+- prokka >= 1.13
 
 #### Installation Steps:
-- Step 1: Download and build bacterial database (please ignore this step if you already have a bacterial database):
-`wget –c ftp://ddbj.nig.ac.jp/public/ddbj_database/ddbj/fasta/ddbjbct*`
-`zcat ddbjbct*.gz > ddbjbct.fasta`
-`rm –rf ddbjbct*.gz`
+- Step 1: Download and build bacterial database (please ignore this step if you already have a bacterial database):  
+`wget –c ftp://ddbj.nig.ac.jp/public/ddbj_database/ddbj/fasta/ddbjbct*`  
+`zcat ddbjbct*.gz > ddbjbct.fasta`  
+`rm –rf ddbjbct*.gz`  
 `makeblastdb -in ddbjbct.fasta -dbtype nucl -out ddbjbct.fasta`
 - Step 2: Install temphd
--- option 1: from conda:
+  - option 1: from conda:  
 `conda install temphd`
--- option 2: from github:
-`git clone https://github.com/NancyZxll/temperate-phage-active-prophage-detection/`
-`tar –xvf temphd.tar.gz`
-`cd temphd`
-`sh build.sh`
-- Step 3: Test if the installation is successful:
+  - option 2: from github:  
+`git clone https://github.com/NancyZxll/temperate-phage-active-prophage-detection/`  
+`tar –xvf temphd.tar.gz`  
+`cd temphd`  
+`sh build.sh`  
+- Step 3: Test if the installation is successful:  
 `temphd.pl –h`
 
 #### Temperate Phage Detection:
-- Run the following command to detect the temperate phage(s) in the bacterial data:
-`temphd.pl -r1 <R1.fastq> -r2 <R2.fastq> -f <assembled_fasta_file> -id <ID_name> -sp <species_name> -db <bacteria_db>`
+- Run the following command to detect the temperate phage(s) in the bacterial data:  
+`temphd.pl -r1 <R1.fastq> -r2 <R2.fastq> -f <assembled_fasta_file> -id <ID_name> -sp <species_name> -db <bacteria_db>`  
 - The detected temperate phage is named in the format of ID_species_the direction when detecting (0 for forward/1 for reverse)_phage length_No. of phage_p.fa
 
 #### Temperate Phage Detection Using Test Data:
-- Step 1: Download the test data
-Unfolding Assets at the bottom of https://github.com/NancyZxll/temperate-phage-active-prophage-detection/releases/tag/V1.0;
-Downloading the temperate_phage_detection_testfiles.zip for the test data.
-- Step 2: Detect the temperate phage(s) in the test bacterial data
+- Step 1: Download the test data  
+  - Unfold Assets at the bottom of https://github.com/NancyZxll/temperate-phage-active-prophage-detection/releases/tag/V1.0;  
+  - Download the temperate_phage_detection_testfiles.zip for the test data.
+- Step 2: Detect the temperate phage(s) in the test bacterial data  
 `temphd.pl -r1 your_absolute_path/temperate_phage_detection_testfiles/1365_1P.trim.fastq -r2 your_absolute_path/temperate_phage_detection_testfiles/1365_2P.trim.fastq -f your_absolute_path/temperate_phage_detection_testfiles/1365.454Scaffolds.fna -id 1365.ID -sp 1365.Species -db your_absolute_path/ddbjbct.fasta`
 - Notes: The test files were the next-generation sequencing (NGS) data and assembled sequence of one lab-preserved bacterial strain No.1365. By running the above command, you can get a temperate phage (active prophage within the bacterial genome) sequence named 1365.ID_1365.species_0_44851_1_p.fa under the folder called your destination path/temperate_phage_detection/allphages.
