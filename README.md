@@ -23,7 +23,7 @@ Generally, the in silico temperate phage detection method consists of three step
 `makeblastdb -in ddbjbct.fasta -dbtype nucl -out ddbjbct.fasta`
 - Step 2: Install temphd
   - option 1: from conda:  
-`conda install temphd`
+`conda search -c linwei temphd`
   - option 2: from github:  
 `git clone https://github.com/NancyZxll/temperate-phage-active-prophage-detection/`  
 `tar –xvf temphd.tar.gz`  
