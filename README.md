@@ -1,5 +1,6 @@
 # Temperate-phage-active-prophage-detection
 Detecting temperate phage (active prophage) in assembled bacterial genome sequences
+All additional in-house scripts are available from https://github.com/NancyZxll/temperate-phage-analysis.
 
 ## What is it used for?
 Temperate phages (functional prophages induced from bacteria) help control pathogenicity, modulate community structure, and maintain gut homeostasis1. Complete phage genome sequences are indispensable for understanding phage biology. Traditional plaque techniques are not applicable to temperate phages due to lysogenicity of these phages, which curb identification and characterization of temperate phages. Existing in silico tools for prophage prediction usually fail to detect accurate and complete temperate phage genomes.
